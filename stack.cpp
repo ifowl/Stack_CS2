@@ -14,26 +14,8 @@ bool stack<T>::empty() const {
     return tos == 0;
 }
 
-/*
+
 //Copy constructor for copying stack
-template <typename T>
-stack<T>::stack(const stack<T>& rhs) {
-    Node<T> *temp = rhs.tos;
-    Node<T> *bottom;
-    //tos = 0;
-    while (temp != 0) {
-        if (tos == 0) {
-            tos = new Node<T>(temp.tos.data);
-            bottom = tos;
-        }
-        else {
-            bottom->next = new Node<T>(temp->data);
-            bottom = bottom->next;
-        }
-        temp = temp->next;
-    }
-}
-*/
 template <typename T>
 stack<T>::stack(const stack<T>& rhs) {
     Node<T>* bottom = 0;
