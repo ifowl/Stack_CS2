@@ -75,10 +75,6 @@ bool stack<T>::full() const {
 template <typename T>
 T stack<T>::top() const {
 
-    //if (tos->data != NULL) {
-    //    return tos->data;
-    //}
-    //else return 27;
     if (tos == 0) {
         return NULL;
     }
