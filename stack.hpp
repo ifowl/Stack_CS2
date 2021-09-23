@@ -22,11 +22,6 @@ public:
     Node() {
         Node next(0);
     }
-    //Node() : data(), next(0) {};
-    //Node(T item) {
-    //    Node data(item);
-    //    Node next(0);
-    //}
     Node(T item) : data(item), next(0) {};
 
     T data;
